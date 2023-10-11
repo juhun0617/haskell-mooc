@@ -1,0 +1,9 @@
+resolver: lts-20.13
+install-ghc: true
+# workaround for https://github.com/commercialhaskell/lts-haskell/issues/329:
+flags:
+  mintty:
+    win32-2-13-1: false
+extra-deps:
+  - th-abstraction-0.4.3.0
+  
