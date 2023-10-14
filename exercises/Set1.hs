@@ -76,7 +76,7 @@ eeny n
 checkPassword :: String -> String
 checkPassword password = if password == "swordfish"
                           then "You're in."
-			  else if password == "mellon"
+			   else if password == "mellon"
                            then "You're in."
                             else "ACCESS DENIED!"
 
@@ -103,8 +103,9 @@ postagePrice x = if x <= 500
 -- Use pattern matching! Don't use comparisons!
 --
 -- Ps. remember, the type of booleans in haskell is Bool
-
-isZero = todo
+isZero :: Integer -> Bool
+isZero 0 = True
+isZero n = False
 
 ------------------------------------------------------------------------------
 -- Ex 9: implement using recursion a function sumTo such that
