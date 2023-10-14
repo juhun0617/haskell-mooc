@@ -76,7 +76,7 @@ eeny n
 checkPassword :: String -> String
 checkPassword password = if password == "swordfish"
                           then "You're in."
-			   else if password == "mellon"
+                           else if password == "mellon"
                            then "You're in."
                             else "ACCESS DENIED!"
 
@@ -92,9 +92,9 @@ checkPassword password = if password == "swordfish"
 postagePrice :: Int -> Int
 postagePrice x = if x <= 500
                   then 250
-		   else if x > 500 && x <= 5000
-		    then 300 + x
-		     else 6000
+                   else if x > 500 && x <= 5000
+                    then 300 + x
+                     else 6000
 
 ------------------------------------------------------------------------------
 -- Ex 8: define a function isZero that returns True if it is given an
@@ -113,7 +113,8 @@ isZero n = False
 -- computes the sum 1+2+...+n
 
 sumTo :: Integer -> Integer
-sumTo = todo
+sumTo 0 = 0
+sumTo n = n + sumTo (n - 1)
 
 ------------------------------------------------------------------------------
 -- Ex 10: power n k should compute n to the power k (i.e. n^k)
