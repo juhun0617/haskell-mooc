@@ -75,8 +75,10 @@ eeny n
 
 checkPassword :: String -> String
 checkPassword password = if password == "swordfish"
-                         then "You're in."
-                         else "ACCESS DENIED!"
+                          then "You're in."
+			  else if password == "mellon"
+                           then "You're in."
+                            else "ACCESS DENIED!"
 
 ------------------------------------------------------------------------------
 -- Ex 7: A postal service prices packages the following way.
